@@ -26,6 +26,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: d1 migrations apply database --remote
+          wranglerVersion: "4.105.0"
 
       - name: Deploy Worker
         uses: cloudflare/wrangler-action@v3
@@ -33,3 +34,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy
+          wranglerVersion: "4.105.0"

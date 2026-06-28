@@ -1,6 +1,8 @@
 {
     "name": "bark-worker",
     "main": "main.js",
+    "workers_dev": false,
+    "preview_urls": false,
     "compatibility_date": "2026-06-28",
     "compatibility_flags": [
         "nodejs_compat"
